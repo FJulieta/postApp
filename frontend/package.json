@@ -13,8 +13,7 @@
     "axios": "^1.10.0",
     "next": "15.3.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sass": "^1.89.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -24,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
+    "sass": "^1.89.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

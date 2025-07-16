@@ -1,0 +1,25 @@
+// src/styles/global.scss
+@use './variables' as *;
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid $gray;
+  border-radius: $radius;
+  font-size: 1rem;
+}
+
+button {
+  background-color: $bordeaux;
+  color: $white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: $radius;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: color.adjust($bordeaux, $lightness: -10%);
+  }
+}

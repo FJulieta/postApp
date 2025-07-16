@@ -1,0 +1,37 @@
+@use './variables' as *;
+@use 'sass:color';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: color.adjust($light-gray, $lightness: 5%);
+  padding: 1.5rem;
+  border-radius: $radius;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid $gray;
+    border-radius: $radius;
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: $bordeaux;
+    color: $white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: $radius;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: color.adjust($bordeaux, $lightness: -10%);
+    }
+  }
+}
